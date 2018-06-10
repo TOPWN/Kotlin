@@ -58,4 +58,6 @@ IDE会给你一个编译错误，因为变量 **a** 必须要被初始化，它�
 如果nameTextView为null，同样会报空指针异常，所以这个操作符要慎用。
 
 这是一些对Kotlin的简单介绍，之后的文章会对Kotlin的语法细节做详细的介绍。
+
+
   [1]: https://en.wikipedia.org/wiki/Tony_Hoare
