@@ -5,7 +5,7 @@
 
 > 通过这篇文章来学习kotlin基础认识。
 
-#lateinit vs lazy
+# lateinit vs lazy
 
 lateinit和lazy是非常重要的 **property initialization**功能，我们在对变量进行初始化的时候需要知道应该使用哪一个。
 
@@ -43,7 +43,7 @@ public class Example{
 
   等调用到name变量的时候**name**才会被赋予 **"This is lazy function"**。
 
-#如何选择
+# 如何选择
 
  - lazy只能用于val的property，而lateinit只能用于var。
  - lateinit var可以在任何地方被初始化，如果你不清楚property会以何种方式被初始化，不妨试试lateinit。
