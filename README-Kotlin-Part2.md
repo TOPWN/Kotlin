@@ -6,6 +6,7 @@
 > 通过这篇文章来学习kotlin基础认识。
 
 #lateinit vs lazy
+
 lateinit和lazy是非常重要的 **property initialization**功能，我们在对变量进行初始化的时候需要知道应该使用哪一个。
 
  - lateinit
@@ -27,18 +28,20 @@ fun updateItems() {
 }
 ```
 
-lateinit只能用于声明为var的property，并且只有在property没有自定义getter或setter时才可以使用。property的类型必须是non-null的，并且它不能是原始类型（比如Int）。
+   lateinit只能用于声明为var的property，并且只有在property没有自定义getter或setter时才可以使用。property的类型必须是non-null的，并且它不能是原始类型（比如Int）。
 
  - lazy
    > lazy 是 lazy initialization.
 
    lazy()是一个带有lambda并且可以返回一个lazy对象的函数，首先计算lambda中的值，暂存起来，等真正需要使用到该对象的时候再把之前暂存的值赋予对象。比如：
-   ```kotlin
+   
+```kotlin
 public class Example{
   val name: String by lazy { “This is lazy function” }
 }
 ```
-等调用到name变量的时候**name**才会被赋予 **"This is lazy function"**。
+
+  等调用到name变量的时候**name**才会被赋予 **"This is lazy function"**。
 
 #如何选择
 
