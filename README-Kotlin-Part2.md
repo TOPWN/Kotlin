@@ -39,7 +39,7 @@ lateinit和lazy是非常重要的 **property initialization**功能，我们在�
      val name: String by lazy { “This is lazy function” }
    }
    ```
-  等调用到name变量的时候**name**才会被赋予 **"This is lazy function"**。
+   等调用到name变量的时候**name**才会被赋予 **"This is lazy function"**。
 
 # 如何选择
 
