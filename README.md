@@ -1,4 +1,4 @@
-# Kotlin Part 1 —— 走马观花
+# Kotlin Part 1 —— 初识
 
 
 ---
